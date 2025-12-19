@@ -13,3 +13,21 @@ with st.expander('Data'):
   df
 with st.expander('Input your data'):
   st.write('Input Feature Data')
+  CustomerId = st.number_input('Enter 8 digit CustomeId :')
+  Surname = st.text_input('Enter Customer Surname :')
+  CreditScore = st.number_input('Enter Credit Score of Customer starting from 350 to 850 :')
+  Geography = st.selectbox('Country', ('Spain', 'France', 'Germany'))
+  Gender = st.selectbox('Gender', ('Male', 'Female'))
+  Age = st.number_input('Enter age(above 18) : ')
+  Tenure                0
+  Balance               0
+  NumOfProducts         0
+  HasCrCard             0
+  IsActiveMember        0
+  EstimatedSalary       0
+  Exited                0
+  Complain              0
+  Satisfaction Score    0
+  Card Type             0
+  Point Earned          0
+  
