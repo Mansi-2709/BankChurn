@@ -19,9 +19,9 @@ with st.expander('Input your data'):
   Geography = st.selectbox('Country', ('Spain', 'France', 'Germany'))
   Gender = st.selectbox('Gender', ('Male', 'Female'))
   Age = st.number_input('Enter age(above 18) : ')
-  Tenure                0
-  Balance               0
-  NumOfProducts         0
+  Tenure = st.number_input('Enter the tenure of customer : ')
+  Balance = st.number_input('Enter the balance of Customer Account :', value=0.0)
+  NumOfProducts = st.number_input('Enter the number of products that customer holds : ')
   HasCrCard             0
   IsActiveMember        0
   EstimatedSalary       0
