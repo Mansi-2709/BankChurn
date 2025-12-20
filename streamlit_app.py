@@ -27,7 +27,7 @@ with st.expander('Input your data'):
   IsActiveMember = st.number_input('Enter Customer is Active member(1) or not(0) : ')
   EstimatedSalary = st.number_input('Enter the estimated Salary of Customer :', value=0.0) 
   Complain = st.number_input('Whether Customer has Complaints(1) or not(0) : ')
-  SatisfactionScore = st.number_input('Enter the Satisfaction Score of customer(from 1 to 5) : ') 
-  Card Type = st.selectbox('Card Type', ('SILVER', 'GOLD', 'PLATINUM', 'DAIMOND'))
-  Point Earned = st.number_input('Enter the points earned by the Customer :', value=0.0)
+  Satisfaction_Score = st.number_input('Enter the Satisfaction Score of customer(from 1 to 5) : ') 
+  Card_Type = st.selectbox('Card Type', ('SILVER', 'GOLD', 'PLATINUM', 'DAIMOND'))
+  Point_Earned = st.number_input('Enter the points earned by the Customer :', value=0.0)
   
