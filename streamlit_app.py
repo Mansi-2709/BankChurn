@@ -27,6 +27,6 @@ with st.expander('Input your data'):
   EstimatedSalary = st.number_input('Enter the estimated Salary of Customer :', value=0.0) 
   Complain = st.number_input('Whether Customer has Complaints(1) or not(0) : ')
   Satisfaction Score = st.number_input('Enter the Satisfaction Score of customer(from 1 to 5) : ') 
-  Card Type             0
-  Point Earned          0
+  Card Type = st.selectbox('Card Type', ('SILVER', 'GOLD', 'PLATINUM', 'DAIMOND'))
+  Point Earned = st.number_input('Enter the points earned by the Customer :', value=0.0)
   
