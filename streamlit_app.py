@@ -22,12 +22,11 @@ with st.expander('Input your data'):
   Tenure = st.number_input('Enter the tenure of customer : ')
   Balance = st.number_input('Enter the balance of Customer Account :', value=0.0)
   NumOfProducts = st.number_input('Enter the number of products that customer holds : ')
-  HasCrCard             0
-  IsActiveMember        0
-  EstimatedSalary       0
-  Exited                0
-  Complain              0
-  Satisfaction Score    0
+  HasCrCard = st.number_input('Enter Customer has Credit Card(1) or not(0) : ')
+  IsActiveMember = st.number_input('Enter Customer is Active member(1) or not(0) : ')
+  EstimatedSalary = st.number_input('Enter the estimated Salary of Customer :', value=0.0) 
+  Complain = st.number_input('Whether Customer has Complaints(1) or not(0) : ')
+  Satisfaction Score = st.number_input('Enter the Satisfaction Score of customer(from 1 to 5) : ') 
   Card Type             0
   Point Earned          0
   
