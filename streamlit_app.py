@@ -11,6 +11,7 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/heads/master/Customer-Churn-Records.csv')
   df
+
 with st.expander('Input your data'):
   st.write('Input Feature Data')
   CustomerId = st.number_input('Enter 8 digit CustomeId :')
