@@ -30,4 +30,21 @@ with st.expander('Input your data'):
   Satisfaction_Score = st.number_input('Enter the Satisfaction Score of customer(from 1 to 5) : ') 
   Card_Type = st.selectbox('Card Type', ('SILVER', 'GOLD', 'PLATINUM', 'DAIMOND'))
   Point_Earned = st.number_input('Enter the points earned by the Customer :', value=0.0)
-  
+
+data = {'CustomerId' : CustomerId,
+        'Surname' : Surname,
+        'CreditScore' : CreditScore,
+        'Geography' : Geography
+        'Gender' : Gender,
+        'Age' : Age,
+        'Tenure' : Tenure,
+        'Balance' : Balance,
+        'NumOfProducts' : NumOfProducts,
+        'HasCrCard' : HasCrCard,
+        'IsActiveMember' : IsActiveMember,
+        'EstimatedSalary' : EstimatedSalary,
+        'Exited' : Exited,
+        'Complain' : Complain,
+        'Satisfaction Score' : Satisfaction_Score,
+        'Card Type' : Card_Type,
+        'Point Earned' : Point_Earned}
