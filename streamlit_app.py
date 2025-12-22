@@ -14,7 +14,7 @@ with st.expander('Data'):
   df
 with st.expander('X dataframe'):
   st.write('**X**')
-  col_X=['Complain', 'Age', 'IsActiveMember', 'Gender', 'Balance', 'Geography', 'NumOfProducts', 'Tenure']
+  col_X=['Geography', 'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'IsActiveMember', 'Complain']
   X=df[col_X]
   X
 
@@ -29,7 +29,8 @@ with st.expander('Input your data'):
   NumOfProducts = st.number_input('Enter the number of products that customer holds : ')
   IsActiveMember = st.number_input('Enter Customer is Active member(1) or not(0) : ')
   Complain = st.number_input('Whether Customer has Complaints(1) or not(0) : ')
-  
+
+
 data = {'Geography' : Geography,
         'Gender' : Gender,
         'Age' : Age,
@@ -40,3 +41,8 @@ data = {'Geography' : Geography,
         'Complain' : Complain,
         }
 
+input_df = pd.DataFrame(data, index=[0])
+bank_churn = pd.concat([input_df,X], axis=0)
+with st.expander('Your input data'):
+  st.write('**Input Data**')
+  input_df
