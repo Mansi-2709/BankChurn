@@ -36,7 +36,7 @@ with st.expander('Input your data'):
 data = {'CustomerId' : CustomerId,
         'Surname' : Surname,
         'CreditScore' : CreditScore,
-        'Geography' : Geography
+        'Geography' : Geography,
         'Gender' : Gender,
         'Age' : Age,
         'Tenure' : Tenure,
