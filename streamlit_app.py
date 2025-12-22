@@ -10,7 +10,9 @@ st.title("🏦 Bank Customer Churn Prediction & Customer Retention Dashboard")
 with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/heads/master/Customer-Churn-Records.csv')
+  df = df.drop('CustomerId', axis=1)
   df
+
 
 with st.expander('Input your data'):
   st.write('Input Feature Data')
@@ -48,3 +50,4 @@ data = {'CustomerId' : CustomerId,
         'Satisfaction Score' : Satisfaction_Score,
         'Card Type' : Card_Type,
         'Point Earned' : Point_Earned}
+
