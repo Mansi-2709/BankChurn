@@ -12,6 +12,11 @@ with st.expander('Data'):
   df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/heads/master/Customer-Churn-Records.csv')
   df = df.drop('RowNumber', axis=1)
   df
+with st.expander('X dataframe):
+  st.write('**X**')
+  col_X=['Complain', 'Age', 'IsActiveMember', 'Gender', 'Balance', 'Geography', 'NumOfProducts', 'Tenure']
+  X=df[col_X]
+  X
 
 
 with st.expander('Input your data'):
