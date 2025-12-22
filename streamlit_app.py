@@ -54,14 +54,14 @@ with st.expander('Your input data'):
   st.write('**Input Data**')
   input_df
   encoder = LabelEncoder()
-	bank_churn['Geography'] = encoder.fit_transform(bank_churn['Geography'])
+  bank_churn['Geography'] = encoder.fit_transform(bank_churn['Geography'])
   bank_churn['Gender'] = encoder.fit_transform(bank_churn['Gender'])
   bank_churn['Balance_exponential'] = bank_churn.Balance**(1/1.2)
   X = bank_churn[1:]
   clf = RandomForestClassifier(class_weight = {1:0,1: 4}, criterion = 'entropy', n_estimators = 30, random_state=42)
   clf.fit(X,y)
   input_df=bank_churn[:1]
-	y_pred=clf.predict(input_df)
+  y_pred=clf.predict(input_df)
 
 with st.expander('Predictions'):
   if y_pred == 1:
