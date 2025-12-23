@@ -4,5 +4,3 @@ base = "dark"
 secondaryBackgroundColor="#3D4B66"
 textColor="#FFFCFC"
 font="sans serif"
-[client]
-showSidebarNavigation = false
