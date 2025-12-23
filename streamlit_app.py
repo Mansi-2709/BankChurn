@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 st.set_page_config(page_title="Bank Customer Churn Prediction & Customer Retention Dashboard", page_icon=":bank:",layout="wide")
 st.title("🏦 Bank Customer Churn Prediction")
 home_page = st.Page("streamlit_app.py", title="Bank Customer Churn Prediction", icon="🏦")
-dashboard = st.Page("streamlit_app.py", title="Dashboard", icon="📊")
+dashboard = st.Page("pages/Dashboard.py", title="Dashboard", icon="📊")
 pg = st.navigation([home_page, dashboard])
 pg.run()
 with st.expander('Data'):
