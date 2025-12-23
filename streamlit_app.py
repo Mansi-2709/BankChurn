@@ -8,7 +8,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 
 warnings.filterwarnings('ignore')
-st.title("Welcome")
 welcome = st.Page("streamlit_app.py", title="Welcome", icon="🏦")
 prediction = st.Page("pages/Predictions.py", title="Predictions", icon="📊")
 dashboard = st.Page("pages/Dashboard.py", title="Dashboard", icon="📊")
