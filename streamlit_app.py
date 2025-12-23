@@ -13,7 +13,7 @@ st.title("🏦 Bank Customer Churn Prediction")
 home_page = st.Page("streamlit_app.py", title="Bank Customer Churn Prediction", icon="🏦")
 dashboard = st.Page("pages/Dashboard.py", title="Dashboard", icon="📊")
 pg = st.navigation([home_page, dashboard])
-pg.run()
+
 with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/heads/master/Customer-Churn-Records.csv')
@@ -72,3 +72,5 @@ with st.expander('Predictions'):
     st.write('The Customer will Exit.')
   else :
     st.write('The Customer will Not exit.')
+
+pg.run()
