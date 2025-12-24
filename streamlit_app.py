@@ -25,8 +25,8 @@ message2 = "Dahsboard - This page will let you know about the trends which decid
 message3 = "Predict - This page will predict whether the customer will stay based on parameters you input into the app"
 # Display the message with a cursor
 with st.chat_message("user"):
-    st.write_stream(slow_echo(message, delay=0.02))
-    st.write_stream(slow_echo(message1, delay=0.02))
-    st.write_stream(slow_echo(message2, delay=0.02))
-    st.write_stream(slow_echo(message3, delay=0.02))
+    st.write_stream(slow_echo(message, delay=0.02), cursor="⚡")
+    st.write_stream(slow_echo(message1, delay=0.02), cursor="⚡")
+    st.write_stream(slow_echo(message2, delay=0.02), cursor="⚡")
+    st.write_stream(slow_echo(message3, delay=0.02), cursor="⚡")
 
