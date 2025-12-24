@@ -9,24 +9,6 @@ from sklearn.ensemble import RandomForestClassifier
 
 warnings.filterwarnings('ignore')
 st.title("🏦 Bank Customer Churn Prediction")
-st.markdown(
-    """
-    <style>
-    /* Table header background */
-    thead tr th {
-        background-color: #2E7D32 !important;  /* Green */
-        color: white !important;
-    }
-
-    /* Row index header (left-most column) */
-    tbody tr th {
-        background-color: #2E7D32 !important;
-        color: white !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 with st.expander('Data'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/heads/master/Customer-Churn-Records.csv')
