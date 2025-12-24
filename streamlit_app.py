@@ -17,7 +17,6 @@ def slow_echo(text, delay=0.05):
         yield char
         time.sleep(delay)
 
-st.title("Typewriter Effect with st.write_stream")
 
 message = "This App predicts whether a bank customer will exit or not based on the some parameters that you will provide."
 message1 = "Select which page you want to go to from the side panel."
