@@ -10,4 +10,7 @@ st.set_page_config(
 )
 
 st.title("Welcome ")
-st.write("Welcome to the application.")
+st.write("This App predicts whether a bank customer will exit or not based on the some parameters that you will provide.")
+st.write("Select which page you want to go to from the side panel.")
+st.write("Predict - This page will predict whether the customer will stay based on parameters you input into the app")
+st.write("Dahsboard - This page will let you know about the trends which decide which customer stay and which leave.")
