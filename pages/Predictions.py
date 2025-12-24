@@ -29,7 +29,7 @@ with st.expander('Input your data'):
   st.write('Input Feature Data')
   Geography = st.selectbox('Country', ('Spain', 'France', 'Germany'))
   Gender = st.selectbox('Gender', ('Male', 'Female'))
-  Age = st.number_input('Enter age(above 18) : ')
+  Age = st.number_input('Enter age(above 18) : ', min_value=18)
   Tenure = st.number_input('Enter the tenure of customer : ')
   Balance = st.number_input('Enter the balance of Customer Account :', value=0.0)
   NumOfProducts = st.number_input('Enter the number of products that customer holds : ')
