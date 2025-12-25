@@ -50,7 +50,7 @@ data = {'Geography' : Geography,
 input_df = pd.DataFrame(data, index=[0])
 bank_churn = pd.concat([input_df,X], axis=0)
 with st.expander('Your input data'):
-  st.write('**Input Data**')
+  st.write('**This is the data you  have provided**')
   input_df
   encoder = LabelEncoder()
   bank_churn['Geography'] = encoder.fit_transform(bank_churn['Geography'])
