@@ -33,7 +33,7 @@ st.plotly_chart(fig6, use_container_width=True)
 
 fig7 = ff.create_distplot(
     [df["Balance"]],
-    group_labels=["Distribution"],
+    group_labels=df["Exited"],
     show_hist=False,
     show_rug=False
 )
