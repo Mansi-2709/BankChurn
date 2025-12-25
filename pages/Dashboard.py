@@ -10,26 +10,38 @@ warnings.filterwarnings('ignore')
 st.title("Bank Churn Dashboard :money_with_wings:")
 df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/heads/master/Customer-Churn-Records.csv')
 
-fig = px.histogram(df, x="Age", color="Exited")
-st.plotly_chart(fig, use_container_width=True)
+col1, col2 = st.columns((2))
+with col1:
+  fig = px.histogram(df, x="Age", color="Exited")
+  st.plotly_chart(fig, use_container_width=True)
 
-fig1 = px.histogram(df, x="Gender", color="Exited")
-st.plotly_chart(fig1, use_container_width=True)
+with col2:
+  fig1 = px.histogram(df, x="Gender", color="Exited")
+  st.plotly_chart(fig1, use_container_width=True)
 
-fig2 = px.histogram(df, x="Tenure", color="Exited", barmode="group")
-st.plotly_chart(fig2, use_container_width=True)
+col1, col2 = st.columns((2))
+with col1:
+  fig2 = px.histogram(df, x="Tenure", color="Exited", barmode="group")
+  st.plotly_chart(fig2, use_container_width=True)
 
-fig3 = px.histogram(df, x="Geography", color="Exited", barmode="group")
-st.plotly_chart(fig3, use_container_width=True)
+with col2:
+  fig3 = px.histogram(df, x="Geography", color="Exited", barmode="group")
+  st.plotly_chart(fig3, use_container_width=True)
 
-fig4 = px.histogram(df, x="Complain", color="Exited", barmode="group")
-st.plotly_chart(fig4, use_container_width=True)
+col1, col2 = st.columns((2))
+with col1:
+  fig4 = px.histogram(df, x="Complain", color="Exited", barmode="group")
+  st.plotly_chart(fig4, use_container_width=True)
 
-fig5 = px.histogram(df, x="IsActiveMember", color="Exited", barmode="group")
-st.plotly_chart(fig5, use_container_width=True)
+with col2:
+  fig5 = px.histogram(df, x="IsActiveMember", color="Exited", barmode="group")
+  st.plotly_chart(fig5, use_container_width=True)
 
-fig6 = px.histogram(df, x="NumOfProducts", color="Exited", barmode="group")
-st.plotly_chart(fig6, use_container_width=True)
+col1, col2 = st.columns((2))
+with col1:
+  fig6 = px.histogram(df, x="NumOfProducts", color="Exited", barmode="group")
+  st.plotly_chart(fig6, use_container_width=True)
 
-fig6 = px.histogram(df, x="Balance", color="Exited", barmode="group")
-st.plotly_chart(fig6, use_container_width=True)
+with col2:
+  fig7 = px.histogram(df, x="Balance", color="Exited", barmode="group")
+  st.plotly_chart(fig7, use_container_width=True)
