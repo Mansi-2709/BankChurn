@@ -30,5 +30,5 @@ st.plotly_chart(fig5, use_container_width=True)
 fig6 = px.histogram(df, x="NumOfProducts", color="Exited", barmode="group")
 st.plotly_chart(fig6, use_container_width=True)
 
-fig7 = px.histogram(df, x="Balance", color="Exited")
+fig7 = px.histogram(df, x="Balance", color="Exited", nbins=50, histnorm="density", opacity=0.6)
 st.plotly_chart(fig7, use_container_width=True)
