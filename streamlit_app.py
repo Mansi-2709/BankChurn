@@ -68,7 +68,7 @@ with col1:
     st.markdown("""
     <div class="feature-box">
         <h4>📊 Data-Driven</h4>
-        <p>Uses historical customer data including credit score, tenure, balance, and product usage.</p>
+        <p>Uses historical customer data including complains, tenure, balance, and product usage.</p>
     </div>
     """, unsafe_allow_html=True)
 
