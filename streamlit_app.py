@@ -2,30 +2,90 @@ import streamlit as st
 import warnings
 import time
 
-
 warnings.filterwarnings('ignore')
 st.set_page_config(
     page_title="Bank Churn App",
     page_icon="🏦",
     layout="wide"
 )
-st.title(" Welcome ")
 
-# Simple generator function
-def slow_echo(text, delay=0.05):
-    for char in text:
-        yield char
-        time.sleep(delay)
+st.markdown("""
+<style>
+.main {
+    padding-top: 2rem;
+}
 
+.intro-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    margin-bottom: 25px;
+}
 
-message = "This App predicts whether a bank customer will exit or not based on the some parameters that you will provide."
-message1 = "Select which page you want to go to from the side panel."
-message2 = "Dashboard - This page will let you know about the trends which decide which customer stay and which leave."
-message3 = "Predictions - This page will predict whether the customer will stay based on parameters you input into the app"
-# Display the message with a cursor
-with st.chat_message("user"):
-    st.write_stream(slow_echo(message, delay=0.02), cursor="⚡")
-    st.write_stream(slow_echo(message1, delay=0.02), cursor="⚡")
-    st.write_stream(slow_echo(message2, delay=0.02), cursor="⚡")
-    st.write_stream(slow_echo(message3, delay=0.02), cursor="⚡")
+.intro-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.intro-text {
+    font-size: 17px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.feature-box {
+    background-color: #f9fafb;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <div class="intro-card">
+        <div class="intro-title">🏦 Bank Customer Churn Prediction</div>
+        <p class="intro-text">
+        Customer churn is a major challenge in the banking sector, directly affecting profitability and customer lifetime value.
+        This application uses machine learning to predict whether a customer is likely to leave the bank based on key
+        demographic, financial, and behavioral attributes.
+        </p>
+        <p class="intro-text">
+        By identifying high-risk customers early, banks can take proactive steps to improve retention and optimize
+        customer engagement strategies.
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.markdown("""
+    <div class="feature-box">
+        <h4>📊 Data-Driven</h4>
+        <p>Uses historical customer data including credit score, tenure, balance, and product usage.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <div class="feature-box">
+        <h4>🤖 Machine Learning</h4>
+        <p>Trained classification model predicts churn probability with explainable insights.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col3:
+    st.markdown("""
+    <div class="feature-box">
+        <h4>💡 Business Impact</h4>
+        <p>Helps retention teams prioritize high-risk customers and reduce churn proactively.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
 
