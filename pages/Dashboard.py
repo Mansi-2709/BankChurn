@@ -27,13 +27,6 @@ def style_fig(fig):
 
 st.markdown("""
 <style>
-.chart-card {
-    background-color: #0E594D;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
-    margin-bottom: 24px;
-}
 .chart-title {
     font-size: 18px;
     font-weight: 600;
@@ -62,20 +55,17 @@ st.divider()
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown('<div class="chart-card">', unsafe_allow_html=True)
     st.markdown('<div class="chart-title">Age vs Churn</div>', unsafe_allow_html=True)
     st.markdown('<div class="chart-caption">Distribution of customer age by churn status</div>', unsafe_allow_html=True)
     st.plotly_chart(style_fig(fig_age_churn), use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown('<div class="chart-card">', unsafe_allow_html=True)
     st.markdown('<div class="chart-title">Gender vs Churn</div>', unsafe_allow_html=True)
     st.markdown('<div class="chart-caption">Churn comparison across gender categories</div>', unsafe_allow_html=True)
     st.plotly_chart(style_fig(fig_gender_churn), use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-st.markdown('<div class="chart-card">', unsafe_allow_html=True)
 st.markdown('<div class="chart-title">Geography vs Churn</div>', unsafe_allow_html=True)
 st.markdown('<div class="chart-caption">Regional churn distribution highlights geographic risk patterns</div>', unsafe_allow_html=True)
 st.plotly_chart(style_fig(fig_geo_churn), use_container_width=True)
@@ -87,19 +77,16 @@ st.divider()
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.markdown('<div class="chart-card">', unsafe_allow_html=True)
     st.markdown('<div class="chart-title">Tenure vs Churn</div>', unsafe_allow_html=True)
     st.plotly_chart(style_fig(fig_tenure_churn), use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
-    st.markdown('<div class="chart-card">', unsafe_allow_html=True)
     st.markdown('<div class="chart-title">Active Member vs Churn</div>', unsafe_allow_html=True)
     st.plotly_chart(style_fig(fig_active_churn), use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col3:
-    st.markdown('<div class="chart-card">', unsafe_allow_html=True)
     st.markdown('<div class="chart-title">Number of Products vs Churn</div>', unsafe_allow_html=True)
     st.plotly_chart(style_fig(fig_products_churn), use_container_width=True)
     st.markdown('</div>', unsafe_allow_html=True)
@@ -108,13 +95,11 @@ st.subheader("⚠️ Risk & Financial Indicators")
 st.divider()
 
 
-st.markdown('<div class="chart-card">', unsafe_allow_html=True)
 st.markdown('<div class="chart-title">Complaints vs Churn</div>', unsafe_allow_html=True)
 st.markdown('<div class="chart-caption">Customers with complaints show significantly higher churn risk</div>', unsafe_allow_html=True)
 st.plotly_chart(style_fig(fig_complaints_churn), use_container_width=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
-st.markdown('<div class="chart-card">', unsafe_allow_html=True)
 st.markdown('<div class="chart-title">Balance Distribution</div>', unsafe_allow_html=True)
 st.markdown('<div class="chart-caption">Account balance distribution across customer base</div>', unsafe_allow_html=True)
 st.plotly_chart(style_fig(fig_balance_dist), use_container_width=True)
