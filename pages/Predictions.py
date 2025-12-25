@@ -129,3 +129,12 @@ if submit:
   else:
       result_text = "✅ Low Risk of Customer Churn"
       result_color = "#9AA316"
+    
+    st.markdown(
+        f"""
+        <div class="result-card">
+            <h2 style="color:{result_color};">{result_text}</h2>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
