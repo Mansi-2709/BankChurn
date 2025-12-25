@@ -124,8 +124,8 @@ with st.expander('Your input data'):
 
 if submit:
   if y_pred == 1:
-        result_text = "⚠️ High Risk of Customer Churn"
-        result_color = "#dc2626"
-    else:
-        result_text = "✅ Low Risk of Customer Churn"
-        result_color = "#9AA316"
+      result_text = "⚠️ High Risk of Customer Churn"
+      result_color = "#dc2626"
+  else:
+      result_text = "✅ Low Risk of Customer Churn"
+      result_color = "#9AA316"
