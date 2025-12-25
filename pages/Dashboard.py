@@ -18,6 +18,9 @@ st.plotly_chart(fig1, use_container_width=True)
 fig2 = px.histogram(df, x="Tenure", color="Exited")
 st.plotly_chart(fig2, use_container_width=True)
 
-fig3 = px.bar(df, x='Geography', color='Exited', barmode='group', height=400)
+fig3 = px.bar(df, x='Geography', color='Exited', barmode='group', height=400, color_discrete_map={
+        "0": "green",
+        "1": "orange"
+    })
 fig.update_xaxes(type='category')
 st.plotly_chart(fig3, use_container_width=True)
