@@ -31,12 +31,5 @@ st.plotly_chart(fig5, use_container_width=True)
 fig6 = px.histogram(df, x="NumOfProducts", color="Exited", barmode="group")
 st.plotly_chart(fig6, use_container_width=True)
 
-fig7 = ff.create_distplot(
-    [df["Balance"]],
-    group_labels=df["Exited"],
-    show_hist=False,
-    show_rug=False
-)
-
-fig7.show()
-
+fig6 = px.histogram(df, x="Balance", color="Exited", barmode="group")
+st.plotly_chart(fig6, use_container_width=True)
