@@ -15,8 +15,20 @@ st.plotly_chart(fig, use_container_width=True)
 fig1 = px.histogram(df, x="Gender", color="Exited")
 st.plotly_chart(fig1, use_container_width=True)
 
-fig2 = px.histogram(df, x="Tenure", color="Exited")
+fig2 = px.histogram(df, x="Tenure", color="Exited", barmode="group")
 st.plotly_chart(fig2, use_container_width=True)
 
 fig3 = px.histogram(df, x="Geography", color="Exited", barmode="group")
 st.plotly_chart(fig3, use_container_width=True)
+
+fig4 = px.histogram(df, x="Complain", color="Exited", barmode="group")
+st.plotly_chart(fig4, use_container_width=True)
+
+fig5 = px.histogram(df, x="IsActiveMember", color="Exited", barmode="group")
+st.plotly_chart(fig5, use_container_width=True)
+
+fig6 = px.histogram(df, x="NumOfProducts", color="Exited", barmode="group")
+st.plotly_chart(fig6, use_container_width=True)
+
+fig7 = px.histogram(df, x="Balance", color="Exited")
+st.plotly_chart(fig7, use_container_width=True)
