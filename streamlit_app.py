@@ -16,7 +16,7 @@ st.markdown("""
 }
 
 .intro-card {
-    background-color: #ffffff;
+    background-color: #0E594D;
     border-radius: 16px;
     padding: 30px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.06);
@@ -26,17 +26,17 @@ st.markdown("""
 .intro-title {
     font-size: 36px;
     font-weight: 700;
-    color: #1f2937;
+    color: #EFF2F6;
 }
 
 .intro-text {
     font-size: 17px;
-    color: #4b5563;
+    color: #F0F2F4;
     line-height: 1.7;
 }
 
 .feature-box {
-    background-color: #f9fafb;
+    background-color: #0E594D;
     border-radius: 12px;
     padding: 18px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.04);
