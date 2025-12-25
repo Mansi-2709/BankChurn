@@ -4,6 +4,7 @@ import plotly.express as px
 import numpy as np
 import os
 import warnings
+import plotly.figure_factory as ff
 warnings.filterwarnings('ignore')
 
 st.title("Bank Churn Dashboard :money_with_wings:")
@@ -30,5 +31,12 @@ st.plotly_chart(fig5, use_container_width=True)
 fig6 = px.histogram(df, x="NumOfProducts", color="Exited", barmode="group")
 st.plotly_chart(fig6, use_container_width=True)
 
-fig7 = px.histogram(df, x="Balance", color="Exited", nbins=50, histnorm="density", opacity=0.6)
-st.plotly_chart(fig7, use_container_width=True)
+fig7 = ff.create_distplot(
+    [df["Balance"]],
+    group_labels=["Distribution"],
+    show_hist=False,
+    show_rug=False
+)
+
+fig7.show()
+
