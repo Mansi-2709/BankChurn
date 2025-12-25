@@ -112,6 +112,7 @@ bank_churn = pd.concat([input_df,X], axis=0)
 with st.expander('Your input data'):
   st.write('**This is the data you  have provided**')
   input_df
+
   encoder = LabelEncoder()
   bank_churn['Geography'] = encoder.fit_transform(bank_churn['Geography'])
   bank_churn['Gender'] = encoder.fit_transform(bank_churn['Gender'])
@@ -130,11 +131,10 @@ if submit:
       result_text = "✅ Low Risk of Customer Churn"
       result_color = "#9AA316"
     
-    st.markdown(
+  st.markdown(
         f"""
         <div class="result-card">
             <h2 style="color:{result_color};">{result_text}</h2>
         </div>
         """,
-        unsafe_allow_html=True
-    )
+        unsafe_allow_html=True)
