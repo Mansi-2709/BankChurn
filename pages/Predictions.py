@@ -10,12 +10,12 @@ from sklearn.ensemble import RandomForestClassifier
 warnings.filterwarnings('ignore')
 st.title("🏦 Bank Customer Churn Prediction")
 with st.expander('Data'):
-  st.write('**Raw Data**')
+  st.write('**This is raw data**')
   df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/heads/master/Customer-Churn-Records.csv')
   df = df.drop('RowNumber', axis=1)
   df
 with st.expander('X dataframe'):
-  st.write('**X**')
+  st.write('**This is the filtered data that will be used for prediction**')
   col_X=['Geography', 'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'IsActiveMember', 'Complain']
   X=df[col_X]
   X
@@ -26,7 +26,7 @@ with st.expander('Target Variable'):
 
 
 with st.expander('Input your data'):
-  st.write('Input Feature Data')
+  st.write('Please input data for which you want to make predictions, here:')
   Geography = st.selectbox('Country', ('Spain', 'France', 'Germany'))
   Gender = st.selectbox('Gender', ('Male', 'Female'))
   Age = st.number_input('Enter age(above 18) : ', min_value=18)
