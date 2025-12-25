@@ -17,3 +17,6 @@ st.plotly_chart(fig1, use_container_width=True)
 
 fig2 = px.histogram(df, x="Tenure", color="Exited")
 st.plotly_chart(fig2, use_container_width=True)
+
+fig3 = px.bar(df, x='Geography', y='count', color='Exited', height=400)
+st.plotly_chart(fig3, use_container_width=True)
