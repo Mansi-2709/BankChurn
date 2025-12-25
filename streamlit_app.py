@@ -47,7 +47,7 @@ st.markdown("""
 st.markdown(
     """
     <div class="intro-card">
-        <div class="intro-title">🏦 Bank Customer Churn Prediction</div>
+        <div class="intro-title">🏦 Bank Customer Churn Prediction App</div>
         <p class="intro-text">
         Customer churn is a major challenge in the banking sector, directly affecting profitability and customer lifetime value.
         This application uses machine learning to predict whether a customer is likely to leave the bank based on key
