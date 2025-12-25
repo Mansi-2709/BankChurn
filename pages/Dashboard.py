@@ -18,10 +18,5 @@ st.plotly_chart(fig1, use_container_width=True)
 fig2 = px.histogram(df, x="Tenure", color="Exited")
 st.plotly_chart(fig2, use_container_width=True)
 
-df["Exited"] = df["Exited"].astype(str)
-fig3 = px.histogram(df, x="Geography", color="Exited", barmode="group",
-    color_discrete_map={
-        "0": "green",
-        "1": "orange"
-    })
+fig3 = px.histogram(df, x="Geography", color="Exited", barmode="group")
 st.plotly_chart(fig3, use_container_width=True)
