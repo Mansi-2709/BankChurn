@@ -11,3 +11,9 @@ df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/he
 
 fig = px.histogram(df, x="Age", color="Exited")
 st.plotly_chart(fig, use_container_width=True)
+
+fig1 = px.histogram(df, x="Gender", color="Exited")
+st.plotly_chart(fig1, use_container_width=True)
+
+fig2 = px.histogram(df, x="Tenure", color="Exited")
+st.plotly_chart(fig2, use_container_width=True)
