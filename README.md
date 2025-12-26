@@ -95,7 +95,7 @@ This page helps stakeholders understand key churn drivers.
 - Jupyter Notebook (model development)
 
 ## 📂 Repository Structure
-''' 
+```
 ├── data/
 │   └── bank_churn.csv
 │
@@ -110,4 +110,4 @@ This page helps stakeholders understand key churn drivers.
 │
 ├── requirements.txt
 └── README.md
-'''
+```
