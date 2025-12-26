@@ -33,7 +33,7 @@ All modeling and experimentation are implemented in a separate notebook/script i
 - Feature scaling where required
 - Target variable: Exited (0 = Retained, 1 = Churned)
 
-3. Model Experimentation
+3. Model Experimentation<br/>
 Multiple classification models were trained and evaluated:
       - Random Forest
       - XGBoost
