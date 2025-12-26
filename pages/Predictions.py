@@ -47,8 +47,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 with st.expander("📄 View Training Dataset (Sample)", expanded=False):
-    st.markdown('<div class="data-card">', unsafe_allow_html=True)
-
+    
     st.markdown(
         '<div class="data-title">Model Training Data</div>',
         unsafe_allow_html=True
