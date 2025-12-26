@@ -6,55 +6,37 @@ This project builds an end-to-end machine learning pipeline to predict whether a
 
 The solution combines data analysis, feature engineering, model experimentation, evaluation using ROC-AUC, and a production-style dashboard for exploration and prediction.
 
-🎯 Objectives
+## 🎯 Objectives
 
-Analyze customer behavior and identify churn patterns
+- Analyze customer behavior and identify churn patterns
+- Perform robust feature engineering and model experimentation
+- Select the best-performing model based on ROC-AUC
+- Deploy the model via a user-friendly Streamlit web app
+- Present insights in a business-interpretable manner
 
-Perform robust feature engineering and model experimentation
-
-Select the best-performing model based on ROC-AUC
-
-Deploy the model via a user-friendly Streamlit web app
-
-Present insights in a business-interpretable manner
-
-🧠 Machine Learning Workflow
+## 🧠 Machine Learning Workflow
 
 All modeling and experimentation are implemented in a separate notebook/script included in this repository.
 
 1. Data Understanding & Cleaning
 
-Removed non-informative identifiers (RowNumber, CustomerId, Surname)
-
-Checked missing values and data consistency
-
-Treated categorical and numerical features appropriately
+- Removed non-informative identifiers (RowNumber, CustomerId, Surname)
+- Checked missing values and data consistency
+- Treated categorical and numerical features appropriately
 
 2. Feature Engineering
 
-Encoding categorical variables (Gender, Geography)
-
-Binary transformation of behavioral indicators:
-
-Active Member
-
-Complaints
-
-Feature scaling where required
-
-Target variable: Churn (0 = Retained, 1 = Churned)
+- Encoding categorical variables (Gender, Geography)
+- Binary transformation of behavioral indicators:
+      - Active Member
+      - Complaints
+- Feature scaling where required
+- Target variable: Exited (0 = Retained, 1 = Churned)
 
 3. Model Experimentation
-
-Multiple classification models were trained and evaluated:
-
-Logistic Regression
-
-Random Forest
-
-Gradient Boosting
-
-XGBoost / similar ensemble models (if applicable)
+- Multiple classification models were trained and evaluated:
+      - Random Forest
+      - XGBoost / similar ensemble models (if applicable)
 
 4. Model Evaluation & Selection
 
