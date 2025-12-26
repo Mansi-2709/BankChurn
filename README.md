@@ -93,3 +93,21 @@ This page helps stakeholders understand key churn drivers.
 - Streamlit
 - Matplotlib / Seaborn (for offline EDA)
 - Jupyter Notebook (model development)
+
+## 📂 Repository Structure
+''' 
+├── data/
+│   └── bank_churn.csv
+│
+├── notebooks/
+│   └── ChurnPredict.ipynb   # EDA, feature engineering, model training & evaluation
+│
+├── app/
+│   ├── intro.py               # Intro page
+│   ├── dashboard.py           # EDA dashboard
+│   └── prediction.py          # Prediction interface
+│
+│
+├── requirements.txt
+└── README.md
+'''
