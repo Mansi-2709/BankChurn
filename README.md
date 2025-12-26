@@ -1,17 +1,10 @@
-# Bank Churn Prediction 
-```
-⬆️ (Replace above with your app's name)
-```
+# 🏦 Bank Customer Churn Prediction – End-to-End ML Project
+## 📌 Project Overview
 
-Description of the app ...
+Customer churn is a major challenge in the banking industry, leading to revenue loss and increased customer acquisition costs.
+This project builds an end-to-end machine learning pipeline to predict whether a bank customer is likely to churn, and deploys the final model using an interactive Streamlit application.
 
-## Demo App
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://BankChurn.streamlit.app/)
-
-## GitHub Codespaces
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+The solution combines data analysis, feature engineering, model experimentation, evaluation using ROC-AUC, and a production-style dashboard for exploration and prediction.
 
 ## Section Heading
 
