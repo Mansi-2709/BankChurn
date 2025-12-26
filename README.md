@@ -47,3 +47,49 @@ Multiple classification models were trained and evaluated:
   - Stability and generalization performance
 
 The selected model is then serialized and used in the Streamlit application.
+
+## 🖥️ Streamlit Application
+
+The Streamlit app consists of three focused pages, each serving a specific purpose.
+
+### 1️⃣ Intro Page
+- Business context of customer churn
+- Overview of the ML solution
+- Explanation of how predictions can support retention strategies
+
+### 2️⃣ Dashboard Page
+- Interactive exploratory analysis using Plotly visualizations:
+  - Age vs Churn
+  - Gender vs Churn
+  - Geography vs Churn
+  - Tenure vs Churn
+  - Active Member vs Churn
+  - Complaints vs Churn
+  - Number of Products vs Churn
+  - Balance Distribution
+
+This page helps stakeholders understand key churn drivers.
+
+### 3️⃣ Prediction Page
+- Displays a preview of the training dataset
+- Accepts real-time customer inputs:
+  - Age
+  - Gender
+  - Geography
+  - Tenure
+  - Active Member
+  - Complaints
+  - Number of Products
+  - Account Balance
+- Predicts:
+ Churn risk classification (High / Low)
+- Designed with business-friendly output for decision-making
+
+## 🧰 Tech Stack
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Plotly
+- Streamlit
+- Matplotlib / Seaborn (for offline EDA)
+- Jupyter Notebook (model development)
