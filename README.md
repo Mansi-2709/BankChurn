@@ -121,7 +121,7 @@ This page helps stakeholders understand key churn drivers.
 ## 🚀 How to Run the App
 <a href="https://bankchurnprediction-01.streamlit.app/" target="_blank" rel="noopener noreferrer">
   <button style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; font-size: 16px;">
-    Visit GitHub
+    Launch app
   </button>
 </a>
 
