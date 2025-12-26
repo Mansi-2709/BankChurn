@@ -35,7 +35,7 @@ All modeling and experimentation are implemented in a separate notebook/script i
 
 3. Model Experimentation<br/>
 Multiple classification models were trained and evaluated:
-      - Random Forest
+      - Random Forest(Best performing in this case)
       - XGBoost
       - Decision Tree
 
