@@ -34,9 +34,10 @@ All modeling and experimentation are implemented in a separate notebook/script i
 - Target variable: Exited (0 = Retained, 1 = Churned)
 
 3. Model Experimentation
-- Multiple classification models were trained and evaluated:
+Multiple classification models were trained and evaluated:
       - Random Forest
-      - XGBoost / similar ensemble models (if applicable)
+      - XGBoost
+      - Decision Tree
 
 4. Model Evaluation & Selection
 
