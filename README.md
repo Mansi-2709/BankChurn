@@ -111,3 +111,22 @@ This page helps stakeholders understand key churn drivers.
 ├── requirements.txt
 └── README.md
 ```
+
+## 📊 Evaluation Metric
+- ROC-AUC was chosen due to:
+  - Class imbalance in churn data
+  - Better discrimination ability than accuracy
+- Final model achieves strong ROC-AUC, indicating effective separation between churned and retained customers
+
+## 🚀 How to Run the App
+<a href="https://bankchurnprediction-01.streamlit.app/" target="_blank" rel="noopener noreferrer">
+  <button style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; font-size: 16px;">
+    Visit GitHub
+  </button>
+</a>
+
+## 📈 Business Impact
+- Enables early identification of high-risk customers
+- Supports targeted retention campaigns
+- Reduces churn-related revenue loss
+- Provides actionable insights through intuitive dashboards
