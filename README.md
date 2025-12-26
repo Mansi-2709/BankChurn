@@ -40,15 +40,9 @@ Multiple classification models were trained and evaluated:
       - Decision Tree
 
 4. Model Evaluation & Selection
-
-Primary evaluation metric: ROC-AUC
-
-Cross-validated performance comparison
-
-Final model selected based on:
-
-Highest ROC-AUC
-
-Stability and generalization performance
-
+- Primary evaluation metric: ROC-AUC
+- Cross-validated performance comparison
+- Final model selected based on:
+  - Highest ROC-AUC
+  - Stability and generalization performance
 The selected model is then serialized and used in the Streamlit application.
