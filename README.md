@@ -28,8 +28,8 @@ All modeling and experimentation are implemented in a separate notebook/script i
 
 - Encoding categorical variables (Gender, Geography)
 - Binary transformation of behavioral indicators:
-      - Active Member
-      - Complaints
+  - Active Member
+  - Complaints
 - Feature scaling where required
 - Target variable: Exited (0 = Retained, 1 = Churned)
 
