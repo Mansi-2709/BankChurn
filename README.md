@@ -97,15 +97,15 @@ This page helps stakeholders understand key churn drivers.
 ## 📂 Repository Structure
 ```
 ├── data/
-│   └── bank_churn.csv
+│   └── Customer-Churn-Records.csv
 │
 ├── notebooks/
 │   └── ChurnPredict.ipynb   # EDA, feature engineering, model training & evaluation
 │
 ├── app/
-│   ├── intro.py               # Intro page
-│   ├── dashboard.py           # EDA dashboard
-│   └── prediction.py          # Prediction interface
+│   ├── streamlit_app.py               # Intro page
+│   ├── Dashboard.py           # EDA dashboard
+│   └── Predictions.py          # Prediction interface
 │
 │
 ├── requirements.txt
