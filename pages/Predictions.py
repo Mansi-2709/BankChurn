@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 warnings.filterwarnings('ignore')
 df = pd.read_csv('https://raw.githubusercontent.com/Mansi-2709/BankChurn/refs/heads/master/Customer-Churn-Records.csv')
 df = df.drop('RowNumber', axis=1)
-st.subheader("🔮 Customer Churn Prediction")
+st.header("🔮 Customer Churn Prediction")
 st.caption(
     "Enter customer details below to predict the likelihood of churn using the trained machine learning model."
 )
